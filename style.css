@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 /* Beautiful Old Paper Background Effect */
 body::before {
     content: '';
@@ -281,13 +285,20 @@ body::before {
 }
 
 .image-section{
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     height: 100%;
     border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .number-text{
@@ -675,9 +686,104 @@ body::before {
         font-size: 52px;
         line-height: 45px;
     }
+    
+    /* WANTED Section Mobile Fixes */
+    .left-part {
+        width: 40px;
+        height: 80px;
+        left: 20px;
+    }
+    
+    .mid-part {
+        width: 85%;
+        height: 120px;
+    }
+    
+    .right-part {
+        width: 40px;
+        height: 80px;
+        right: 20px;
+    }
+    
+    .wanted-text {
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+    
+    .dead-or-alive-text {
+        font-size: 20px;
+        letter-spacing: 8px;
+    }
+    
+    .name-text {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+    
+    .image-section {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .number-text {
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+    
+    .reward-text {
+        font-size: 28px;
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-grid {
+        gap: 20px;
+        margin: 40px 0;
+    }
+    
+    .mid-part {
+        width: 80%;
+        height: 100px;
+    }
+    
+    .wanted-text {
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+    
+    .dead-or-alive-text {
+        font-size: 18px;
+        letter-spacing: 6px;
+    }
+    
+    .name-text {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+    
+    .number-text {
+        font-size: 45px;
+        letter-spacing: 15px;
+    }
+    
+    .reward-text {
+        font-size: 24px;
+        letter-spacing: 8px;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+    
     .main-title {
         font-size: 36px;
     }
@@ -690,6 +796,67 @@ body::before {
     .tagline {
         font-size: 12px;
         letter-spacing: 1px;
+    }
+    
+    /* WANTED Section for very small screens */
+    .left-part {
+        width: 30px;
+        height: 60px;
+        left: 15px;
+    }
+    
+    .mid-part {
+        width: 90%;
+        height: 90px;
+    }
+    
+    .right-part {
+        width: 30px;
+        height: 60px;
+        right: 15px;
+    }
+    
+    .wanted-text {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+    
+    .dead-or-alive-text {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    
+    .name-text {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    
+    .number-text {
+        font-size: 35px;
+        letter-spacing: 10px;
+    }
+    
+    .reward-text {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    
+    .header-decoration {
+        font-size: 32px;
+    }
+    
+    .edition-info {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    
+    .article-title {
+        font-size: 22px;
+    }
+    
+    .contact-banner h3 {
+        font-size: 24px;
+        letter-spacing: 2px;
     }
 }
 
